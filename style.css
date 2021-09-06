@@ -119,9 +119,9 @@ button:focus {
   .container .right-side {
     order: -1;
     width: 100%;
-    background-image: url("./asserts/mobile.png");
+    background-image: url("./asserts/Mask\ Group\ 114@2x.png");
     background-color: #616b5d;
-    height: 50%;
+    height: 100%;
   }
   .container .left-side {
     width: 100%;
