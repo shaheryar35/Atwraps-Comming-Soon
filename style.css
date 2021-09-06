@@ -3,7 +3,7 @@ body {
 }
 .container {
   display: flex;
-  flex-direction: row;
+
   flex-wrap: wrap;
   background: #ffffff;
   height: 100vh;
@@ -112,6 +112,37 @@ button:focus {
   outline: none;
 }
 
+i.fa {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  /* padding: 0.5em 0.6em; */
+  padding: 0.2em 0.3em;
+  background-color: hsla(157, 10%, 60%, 1);
+}
+.icons {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+}
+.whatsapp-icon {
+  padding-bottom: 1rem;
+  font-size: 45px;
+  color: hsla(0, 0%, 100%, 1);
+  cursor: pointer;
+}
+.fa-whatsapp:hover {
+  color: #616b5d;
+}
+.phone-icon {
+  font-size: 45px;
+  color: hsla(0, 0%, 100%, 1);
+  cursor: pointer;
+}
+.fa-phone:hover {
+  color: #616b5d;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     margin: 0px;
@@ -120,6 +151,7 @@ button:focus {
     order: -1;
     width: 100%;
     background-image: url("./asserts/mobile.png");
+    background-size: 100% 100%;
     background-color: #616b5d;
     height: 50%;
   }
@@ -139,5 +171,20 @@ button:focus {
   }
   .form-inline input {
     width: 10rem;
+  }
+  .icons {
+    display: none !important;
+  }
+}
+@media (max-width: 880px) and (min-width: 600px) {
+  body {
+    margin: 0px;
+  }
+  .heading {
+    font: normal normal 300 40px/132px Canela;
+  }
+  .description {
+    font: normal normal 300 17px/26px Avenir;
+    padding: 0% 9%;
   }
 }
