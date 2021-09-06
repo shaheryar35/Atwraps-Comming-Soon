@@ -119,11 +119,15 @@ button:focus {
   .container .right-side {
     order: -1;
     width: 100%;
-    background-image: url("./asserts/rifht-side-content.png");
+    background-image: url("./asserts/Mask\ Group\ 114@2x.png");
+    background-color: #616b5d;
     height: 100%;
   }
   .container .left-side {
     width: 100%;
+  }
+  .container .left-side .left-side-container-content {
+    padding-top: 3rem;
   }
   .heading {
     font: normal normal 300 45px/132px Canela;
