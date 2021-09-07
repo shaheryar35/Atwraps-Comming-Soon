@@ -6,6 +6,10 @@ body {
   src: url("./asserts/AvenirBlack/Avenir\ Light.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Arial Bold";
+  src: url("./asserts/arialbd.ttf") format("truetype");
+}
+@font-face {
   font-family: "Canela Regular";
   src: url("./asserts/Canela-Regular/Canela-Regular.ttf") format("truetype");
 }
@@ -113,7 +117,9 @@ body {
   border: 1px solid #ffffff;
   border-radius: 4px;
   height: 42px;
-  font-size: 11.5px;
+  font-size: 11px;
+  font-family: Arial Bold;
+  letter-spacing: 0px;
 }
 
 .form-inline button:hover {
