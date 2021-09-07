@@ -37,12 +37,15 @@ body {
   align-items: flex-end;
 }
 .container .pre-left-container img {
-  width: 100%;
-  padding-top: 2rem;
+  width: 110%;
+  /* padding-top: 2rem; */
+  position: relative;
+  top: 1rem;
+  right: 0.3rem;
 }
 .container .pre-right-container img {
-  width: 100%;
-  padding-bottom: 2rem;
+  width: 110%;
+  padding-bottom: 1rem;
 }
 .container .left-side {
   background-color: #616b5d;
@@ -233,5 +236,14 @@ i.fa {
   .description {
     font: normal normal 300 17px/26px Avenir;
     padding: 0% 9%;
+  }
+  .container .pre-left-container {
+    display: none !important;
+  }
+  .container .pre-right-container {
+    display: none !important;
+  }
+  .container .right-side {
+    width: 50%;
   }
 }
