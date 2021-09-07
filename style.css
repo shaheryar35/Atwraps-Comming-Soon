@@ -253,7 +253,12 @@ i.fa {
     /* display: none !important; */
     position: absolute;
     bottom: 29px;
-    right: 30px;
+    right: 11px;
+  }
+  .whatsapp-icon {
+    padding-bottom: 0.1rem;
+
+    cursor: pointer;
   }
   .whatsapp-icon img {
     width: 100%;
