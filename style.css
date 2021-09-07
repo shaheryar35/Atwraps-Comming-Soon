@@ -45,12 +45,13 @@ body {
   /* padding-top: 2rem; */
   position: relative;
   top: 2rem;
-  right: 0.7rem;
+  right: 0.9rem;
 }
 .container .pre-right-container img {
-  width: 115%;
+  width: 120%;
 
   padding-bottom: 1rem;
+
   /* position: relative;
   bottom: 1rem;
   right: 0.4rem; */
