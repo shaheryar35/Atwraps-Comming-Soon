@@ -127,7 +127,7 @@ body {
   border-radius: 4px;
   height: 42px;
   font-size: 11px;
-  font-family: Arial Bold;
+  font-family: Avenir Light;
   letter-spacing: 0px;
 }
 
@@ -210,16 +210,20 @@ i.fa {
 }
 
 @media only screen and (max-width: 600px) {
+  .form-inline {
+    background-color: #616b5d;
+  }
   body {
     margin: 0px;
+    background-color: #616b5d;
   }
   .log img {
+    /* width: 30%; */
     width: 20%;
     height: 10%;
   }
   .container {
     background: #616b5d;
-    height: 100%;
   }
   .container .right-side {
     order: -1;
@@ -227,17 +231,18 @@ i.fa {
     background: url("./asserts/Rectangle\ 7484.png");
     background-size: 100% 100%;
     background-color: #616b5d;
-    /* height: 250px; */
+    /* height: 350px; */
     height: 30vh;
     position: relative;
   }
   .container .left-side {
     width: 100%;
-    /* height: 430px; */
+    /* height: 600px; */
     height: 70vh;
+    padding-top: 0%;
+    padding-bottom: 0%;
     display: flex;
-    padding: 0%;
-    margin: 0%;
+    align-items: center;
   }
   .container .pre-left-container {
     display: none !important;
@@ -246,10 +251,11 @@ i.fa {
     display: none !important;
   }
   .container .left-side .left-side-container-content {
-    /* padding-top: 3rem; */
+    /* padding-top: 1.4rem; */
   }
   .heading {
-    font: normal normal 300 45px/132px Canela;
+    /* font: normal normal 300 45px/132px Canela; */
+    font: normal normal 300 45px/104px Canela;
   }
   .description {
     font: normal normal 300 17px/26px Avenir;
