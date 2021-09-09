@@ -34,11 +34,15 @@
                 <div class="notify">
                     Notify Me!
                 </div>
-                <form class="form-inline">
+                <form class="form-inline" id="contactForm">
 
                     <input type="email" id="email" placeholder="Enter email" name="email" required>
-                    <button type="submit">SUBSCRIBE</button>
+                    <button id="submit-btn">SUBSCRIBE</button>
+
                 </form>
+                <div id="message" class="message">
+                    Thanks for contacting we will let you soon!
+                </div>
 
 
             </div>
@@ -69,6 +73,42 @@
         </div>
     </div>
 
+
 </body>
+<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+<script>
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyDQ-zzrdQBkhDJgep7GwfqEzTKMXbDe6zk",
+        authDomain: "atwraps-3d9f8.firebaseapp.com",
+        databaseURL: "https://atwraps-3d9f8-default-rtdb.firebaseio.com",
+        projectId: "atwraps-3d9f8",
+        storageBucket: "atwraps-3d9f8.appspot.com",
+        messagingSenderId: "660940765246",
+        appId: "1:660940765246:web:59ca1aa7d2596254e0396f",
+        measurementId: "G-RGW47ZLLMX"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+
+    document.getElementById('contactForm').addEventListener('submit', submitForm);
+    var emailsRef = firebase.database().ref('emails');
+
+    function submitForm(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        var newEmailRef = emailsRef.push();
+        newEmailRef.set({
+            email: email
+        }).then(() => {
+            document.querySelector('#contactForm').style.display = 'none';
+            document.querySelector('.message').style.display = 'block';
+
+        })
+
+
+
+    }
+</script>
 
 </html>

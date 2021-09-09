@@ -208,8 +208,22 @@ i.fa {
   width: 12%;
   height: 12%;
 }
+.message {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  opacity: 1;
+  margin-top: 2rem;
+  font-family: Canela Regular;
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
+  .message {
+    font-size: 17px;
+    padding: 0% 9%;
+  }
   .form-inline {
     background-color: #616b5d;
   }
