@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  /* background-color: #616b5d; */
 }
 @font-face {
   font-family: "Avenir Light";
@@ -238,6 +239,7 @@ i.fa {
   }
   .container {
     background: #616b5d;
+    /* min-height: 100%; */
   }
   .container .right-side {
     order: -1;
@@ -246,17 +248,19 @@ i.fa {
     background-size: 100% 100%;
     background-color: #616b5d;
     /* height: 350px; */
-    height: 30vh;
+    /* height: 30vh; */
+    min-height: 40%;
     position: relative;
   }
   .container .left-side {
     width: 100%;
     /* height: 600px; */
-    height: 70vh;
+    /* height: 70vh; */
+    min-height: 60%;
     padding-top: 0%;
     padding-bottom: 0%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
   .container .pre-left-container {
     display: none !important;
@@ -265,7 +269,7 @@ i.fa {
     display: none !important;
   }
   .container .left-side .left-side-container-content {
-    /* padding-top: 1.4rem; */
+    padding-top: 1.4rem;
   }
   .heading {
     /* font: normal normal 300 45px/132px Canela; */
@@ -303,16 +307,51 @@ i.fa {
     font-size: 16px;
   }
 }
-@media (max-width: 880px) and (min-width: 600px) {
-  body {
-    margin: 0px;
+@media (max-width: 1024px) and (min-width: 880px) {
+  .container .pre-left-container {
+    display: none !important;
+  }
+  .container .pre-right-container {
+    display: none !important;
+  }
+  .container .left-side {
+    width: 50%;
+    /* height: 600px; */
+  }
+  .container .right-side {
+    width: 50%;
+    /* height: 600px; */
   }
   .heading {
-    font: normal normal 300 40px/132px Canela;
+    font: normal normal 300 70px/132px Canela;
   }
   .description {
-    font: normal normal 300 17px/26px Avenir;
-    padding: 0% 9%;
+    /* font: normal normal 300 17px/26px Avenir; */
+    font-size: 20px;
+    padding: 1% 9%;
+  }
+}
+
+@media (max-width: 880px) and (min-width: 600px) {
+  .form-inline {
+    background-color: #616b5d;
+  }
+  body {
+    margin: 0px;
+    background-color: #616b5d;
+  }
+  .log img {
+    /* width: 30%; */
+    width: 20%;
+    height: 10%;
+  }
+  .heading {
+    font: normal normal 300 60px/132px Canela;
+  }
+  .description {
+    /* font: normal normal 300 17px/26px Avenir; */
+    font-size: 20px;
+    padding: 1% 9%;
   }
   .container .pre-left-container {
     display: none !important;
@@ -321,6 +360,98 @@ i.fa {
     display: none !important;
   }
   .container .right-side {
-    width: 50%;
+    order: -1;
+    width: 100%;
+    background: url("./asserts/Rectangle\ 7485.png");
+    background-size: 100% 100%;
+    background-color: #616b5d;
+    /* height: 30px; */
+    min-height: 70%;
+    position: relative;
+  }
+
+  .container .left-side {
+    width: 100%;
+    /* height: 100vh; */
+  }
+  .icons {
+    /* display: none !important; */
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+  }
+  .container .left-side {
+    background-color: #616b5d;
+    width: 100%;
+    display: flex;
+
+    align-items: start;
+
+    justify-content: center;
+  }
+}
+
+@media only screen and (width: 1024px) and (height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .form-inline {
+    background-color: #616b5d;
+  }
+  body {
+    margin: 0px;
+    background-color: #616b5d;
+  }
+  .log img {
+    /* width: 30%; */
+    width: 20%;
+    height: 10%;
+  }
+  .heading {
+    font: normal normal 300 120px/132px Canela;
+  }
+  .description {
+    /* font: normal normal 300 17px/26px Avenir; */
+    font-size: 40px;
+    padding: 1% 9%;
+  }
+  .container .pre-left-container {
+    display: none !important;
+  }
+  .container .pre-right-container {
+    display: none !important;
+  }
+  .container .right-side {
+    order: -1;
+    width: 100%;
+    background: url("./asserts/Rectangle\ 7485.png");
+    background-size: 100% 100%;
+    background-color: #616b5d;
+    /* height: 350px; */
+    height: 40vh;
+    position: relative;
+  }
+
+  .container .left-side {
+    width: 100%;
+    height: 60vh;
+  }
+  .notify {
+    font-size: 29px;
+  }
+
+  .form-inline button {
+    height: 50px;
+    font-size: 15px;
+  }
+  .form-inline input {
+    width: 15rem;
+
+    border-radius: 4px;
+    /* line-height: 25px; */
+    height: 30px;
+  }
+  .icons {
+    /* display: none !important; */
+    position: absolute;
+    bottom: 29px;
+    right: 30px;
   }
 }
