@@ -248,8 +248,8 @@ i.fa {
     background-size: 100% 100%;
     background-color: #616b5d;
     /* height: 350px; */
-    /* height: 30vh; */
-    min-height: 30%;
+    height: 30vh;
+    /* min-height: 30%; */
     position: relative;
   }
   .container .left-side {
